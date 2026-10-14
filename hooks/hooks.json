@@ -1,0 +1,16 @@
+{
+  "description": "第一次打开会话时，向用户展示 SJskill 的短说明。",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/show_manual.py"]
+          }
+        ]
+      }
+    ]
+  }
+}

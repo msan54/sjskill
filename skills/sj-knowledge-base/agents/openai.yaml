@@ -1,0 +1,4 @@
+interface:
+  display_name: "sj-knowledge-base（IP 知识库）"
+  short_description: "建立个人内容知识库，统一定位、选题、素材、稿件与复盘的存放位置并保留已有文件"
+  default_prompt: "使用 $sj-knowledge-base，在我指定的位置建立个人 IP 知识库，并说明第一份材料放在哪里。"

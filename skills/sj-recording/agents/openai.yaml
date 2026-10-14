@@ -1,0 +1,4 @@
+interface:
+  display_name: "sj-recording（录音整理）"
+  short_description: "按真实场景整理逐字稿，保留说话者和证据，提取方法、案例与待办"
+  default_prompt: "使用 $sj-recording 整理这份逐字稿，核对全文覆盖、说话者、关键结论和待办。"

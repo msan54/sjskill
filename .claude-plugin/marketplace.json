@@ -1,0 +1,13 @@
+{
+  "name": "sanjin-skills",
+  "owner": {"name": "叁斤"},
+  "metadata": {"description": "叁斤的个人 IP 内容工作技能，支持独立使用与完整流程。"},
+  "plugins": [
+    {
+      "name": "sjskill",
+      "source": "./",
+      "description": "叁斤的个人 IP 内容技能包",
+      "strict": true
+    }
+  ]
+}

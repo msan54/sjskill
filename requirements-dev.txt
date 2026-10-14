@@ -1,0 +1,2 @@
+# 仅供 tests/validate_package.py 解析技能前言和 UI 元数据。
+PyYAML==6.0.3

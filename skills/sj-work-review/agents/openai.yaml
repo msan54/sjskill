@@ -1,0 +1,4 @@
+interface:
+  display_name: "sj-work-review（工作复盘）"
+  short_description: "把计划与工作记录对照成有证据的日周复盘，分清完成状态和下一步"
+  default_prompt: "使用 $sj-work-review 根据我提供的材料做工作复盘，区分事实、待确认状态和可执行的下一步。"

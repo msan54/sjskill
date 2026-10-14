@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁斤·小红书搜索笔记"
+  short_description: "从读者搜索问题整理关键词、卖点证据和完整答案，写成可复制笔记"
+  default_prompt: "用 $sj-xhs-seo 围绕我给的关键词写一篇搜索笔记，先核对搜索意图和答案缺口。"

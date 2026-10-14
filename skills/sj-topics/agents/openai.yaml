@@ -1,0 +1,4 @@
+interface:
+  display_name: "sj-topics（选题挖掘）"
+  short_description: "从评论、搜索词、定位和真实材料挖选题，圈选后生成可交接的选题卡"
+  default_prompt: "使用 $sj-topics 从我提供的材料挖掘有来源的候选选题，先让我圈选，再标素材状态和写作下一步。"

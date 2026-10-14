@@ -1,0 +1,4 @@
+interface:
+  display_name: "sj-wechat-format（公众号排版）"
+  short_description: "把 Markdown 排成叁斤风格的公众号 HTML，保留正文与本地图片并检查输出"
+  default_prompt: "使用 $sj-wechat-format，把这篇稿件排成公众号 HTML，并核对正文与图片是否完整。"

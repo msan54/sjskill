@@ -1,0 +1,27 @@
+# Python 与本地开发环境
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 本机配置与凭据
+.env
+.env.*
+/.claude/
+/.codex/
+/.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 生成物与临时输出
+/dist/
+/build/
+/output/
+/*.zip
+/*.zip.sha256
+*.log

@@ -1,0 +1,17 @@
+Copyright (c) 2026 叁斤
+
+SJskill 原创技能文档与模板版权归属叁斤。
+作者公开联系信息：公众号：叁斤｜微信：Msan54。
+第三方内容仍保留原作者声明及相应许可。
+
+Except for the Python scripts and their accompanying MIT licenses, the skill
+instructions, reference documents and documentation in this package are licensed
+under the Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0).
+
+The license text is included in licenses/CC-BY-NC-4.0.txt and is available at:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+Attribution should identify 叁斤 and sjskill, retain the license notice, and indicate
+changes. No endorsement by the author is implied. Uses beyond the license grant
+require separate permission. Script licenses are in their respective directories.

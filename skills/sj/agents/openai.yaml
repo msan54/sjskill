@@ -1,0 +1,4 @@
+interface:
+  display_name: "sj（个人 IP 工作入口）"
+  short_description: "根据当前材料和目标，选择定位、选题、写作、学习、排版或复盘的合适工作步骤"
+  default_prompt: "使用 $sj，根据我现在的材料和目标，判断下一步并帮助我完成。"

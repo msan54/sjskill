@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁斤·小红书推荐流笔记"
+  short_description: "把真实事件、冲突和个人判断写成小红书笔记，支持图文与视频文案"
+  default_prompt: "用 $sj-xhs-viral 根据我提供的材料写一篇小红书笔记，保留事实和个人判断，不编造亲历。"

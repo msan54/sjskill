@@ -1,4 +1,4 @@
 interface:
-  display_name: "sj-knowledge-base（IP 知识库）"
-  short_description: "建立个人内容知识库，统一定位、选题、素材、稿件与复盘的存放位置并保留已有文件"
-  default_prompt: "使用 $sj-knowledge-base，在我指定的位置建立个人 IP 知识库，并说明第一份材料放在哪里。"
+  display_name: "叁斤·知识库采访机器人"
+  short_description: "61 题采访装出一个能跑的个人知识库：说明书、产品库、素材库、协作协议和四问验收"
+  default_prompt: "用 $sj-knowledge-base 给我建知识库：先确认建在哪、我用哪个 AI 工具，然后按问题库一题一题采访我，建好目录、写好协作协议，最后用四个问题验收。"

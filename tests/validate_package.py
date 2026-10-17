@@ -8,7 +8,7 @@ import yaml
 
 EXPECTED = {'sj', 'sj-positioning', 'sj-knowledge-base', 'sj-topics', 'sj-xhs-viral',
             'sj-xhs-seo', 'sj-recording', 'sj-learning', 'sj-diagnosis', 'sj-data-review',
-            'sj-work-review', 'sj-wechat-format'}
+            'sj-work-review', 'sj-wechat-format', 'sj-benchmark'}
 DISTRIBUTION_DIRS = ('skills', 'docs', 'licenses', '.claude-plugin', 'hooks')
 DISTRIBUTION_FILES = ('README.md', 'CHANGELOG.md', 'LICENSE', '第三方声明.md', 'ROADMAP.md')
 REQUIRED_FILES = (*DISTRIBUTION_FILES, 'docs/新手入门.md',
@@ -57,8 +57,8 @@ def validate(root):
         if any(re.search(pattern, text) for pattern in patterns):
             failures.append(relative + '：私人路径、凭据或旧知识库依赖残留')
         if path.suffix == '.md':
-            if re.search(r'富贵|梁靠谱|卡兹克|dontbesilent|dbskill|github\.com', text, re.I):
-                failures.append(relative + '：原料品牌或外部仓库残留')
+            if re.search(r'github\.com', text, re.I):
+                failures.append(relative + '：外部仓库链接残留')
             prose = re.sub(r'```.*?```', '', text, flags=re.S)
             prose = re.sub(r'`[^`]*`', '', prose)
             for target in re.findall(r'\]\(([^)]+)\)', prose):

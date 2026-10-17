@@ -1,4 +1,4 @@
 interface:
   display_name: "叁斤·内容诊断"
-  short_description: "按六项标准定位稿件问题，用原句和读者理解说明原因并给出局部改法"
-  default_prompt: "用 $sj-diagnosis 诊断我提供的稿件，指出最影响读者理解的地方和局部修改方向。"
+  short_description: "按六个维度诊断稿子：原句、读者卡在哪、为什么，再从叁斤的改法工具箱给最小改法"
+  default_prompt: "用 $sj-diagnosis 诊断我这篇稿子：给六维简表，按影响排序列出最值得改的地方，每条写原句、读者会卡在哪、为什么、最小改法，最后一句结论。"

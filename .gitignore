@@ -25,3 +25,6 @@ Thumbs.db
 /*.zip
 /*.zip.sha256
 *.log
+
+# 作者本地的参考旧包，不发布
+/部分skill包/

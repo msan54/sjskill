@@ -44,7 +44,7 @@ class PackageValidationTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr or result.stdout)
         report = json.loads(result.stdout)
         self.assertTrue(report['passed'])
-        self.assertEqual(len(report['skills']), 12)
+        self.assertEqual(len(report['skills']), 13)
         self.assertEqual(report['failures'], [])
 
     def test_cache_and_binary_files_report_failures_without_crashing(self):

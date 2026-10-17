@@ -1,4 +1,4 @@
 interface:
-  display_name: "叁斤·小红书推荐流笔记"
-  short_description: "把真实事件、冲突和个人判断写成小红书笔记，支持图文与视频文案"
-  default_prompt: "用 $sj-xhs-viral 根据我提供的材料写一篇小红书笔记，保留事实和个人判断，不编造亲历。"
+  display_name: "叁斤·小红书爆款笔记"
+  short_description: "叁斤的 AI 分身按标题三步法和四层结构写推荐流笔记，交付 3 个标题、正文、标签和封面"
+  default_prompt: "用 $sj-xhs-viral 帮我写一篇小红书推荐流笔记：先问清写什么、写给谁、我有什么真实素材和这篇的目的，再给 3 个标题备选、可直接复制的正文、话题标签、封面建议和一句话点评，不编造我的经历。"

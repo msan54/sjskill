@@ -101,18 +101,24 @@ class ShowManualTests(unittest.TestCase):
         self.assertEqual(json.loads(result.stdout)['systemMessage'], self.manual.read_text(encoding='utf-8').strip())
         self.assertTrue(self.state.is_file())
 
-    def test_skills_share_one_short_first_task_notice(self):
-        expected = (PACKAGE / 'skills' / 'sj' / 'SKILL.md').read_text(encoding='utf-8')
-        start = expected.index('## 第一次使用')
-        end = expected.index('或者「怎么做账号定位」。') + len('或者「怎么做账号定位」。')
-        notice = expected[start:end]
+    def test_only_router_carries_first_task_notice(self):
+        router = (PACKAGE / 'skills' / 'sj' / 'SKILL.md').read_text(encoding='utf-8')
+        self.assertIn('## 第一次使用', router)
+        self.assertIn('.sjskill/seen', router)
+        notice = router[router.index('首次使用说明：'):]
+        notice = notice[:notice.index('\n')]
+        for item in ('知识库', '对标拆解', '录音整理', '文章学习'):
+            self.assertIn(item, notice)
+        self.assertNotIn('资料夹', notice)
         skills = [path for path in (PACKAGE / 'skills').iterdir() if (path / 'SKILL.md').is_file()]
-        self.assertEqual(len(skills), 12)
+        self.assertEqual(len(skills), 13)
         for skill in skills:
-            text = (skill / 'SKILL.md').read_text(encoding='utf-8')
-            self.assertIn(notice, text)
-            self.assertNotIn('## 首次说明', text)
             self.assertFalse((skill / 'scripts' / 'show_once.py').exists())
+            if skill.name == 'sj':
+                continue
+            text = (skill / 'SKILL.md').read_text(encoding='utf-8')
+            self.assertNotIn('## 第一次使用', text)
+            self.assertNotIn('.sjskill/seen', text)
 
 
 if __name__ == '__main__':

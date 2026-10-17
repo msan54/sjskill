@@ -1,4 +1,4 @@
 interface:
-  display_name: "sj-learning（内容学习）"
-  short_description: "双轨学习文章的知识与写法，保留句段证据、适用边界和迁移测试"
-  default_prompt: "使用 $sj-learning 双轨学习这篇内容，提取核心知识并拆解五维写法，标明证据与应用边界。"
+  display_name: "叁斤·文章学习"
+  short_description: "讲了什么、怎么写出来的分开学，写法按五维拆，学到的方法进方法论"
+  default_prompt: "用 $sj-learning 学一下这篇：讲了什么、是怎么写出来的分开学，知识轨还原问题、主张、方法和边界，写法按五维拆，每个手法写清下次怎么套，单篇里看到的标「单篇观察」。"

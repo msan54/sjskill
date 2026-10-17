@@ -1,4 +1,4 @@
 interface:
-  display_name: "sj-data-review（内容数据复盘）"
-  short_description: "核对后台数据的分母与观察窗口，找出有证据的内容卡点和下一步"
-  default_prompt: "使用 $sj-data-review 复盘我提供的内容数据，区分事实、缺口与待验证的改进动作。"
+  display_name: "叁斤·内容复盘"
+  short_description: "按叁斤的漏斗分诊法看后台数据：找出断在哪一层，维护数据总表，给下周 3 个动作"
+  default_prompt: "用 $sj-data-review 复盘我这周的内容数据：读截图提数、更新数据总表、逐篇找出断在哪一层，最后给我下周 3 个能直接执行的动作。"

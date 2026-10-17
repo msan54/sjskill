@@ -13,15 +13,16 @@
 | 我想做什么 | 技能 | 得到什么 |
 |---|---|---|
 | 不知道从哪里开始 | [sj](skills/sj/SKILL.md) | 判断当前应先做的事 |
-| 想清楚账号方向和运营安排 | [sj-positioning](skills/sj-positioning/SKILL.md) | 少量补问后直接交付 HTML 定位与运营方案 |
-| 给素材和稿件找固定位置 | [sj-knowledge-base](skills/sj-knowledge-base/SKILL.md) | 本地知识库与存放说明 |
-| 有方向但不知道写什么 | [sj-topics](skills/sj-topics/SKILL.md) | 候选选题与素材状态 |
-| 写一篇推荐流笔记 | [sj-xhs-viral](skills/sj-xhs-viral/SKILL.md) | 围绕具体事情、冲突和判断的笔记 |
-| 回答读者会搜索的问题 | [sj-xhs-seo](skills/sj-xhs-seo/SKILL.md) | 搜索意图、关键词与可用正文 |
-| 整理录音转写 | [sj-recording](skills/sj-recording/SKILL.md) | 说话者、证据、场景报告与可复用材料 |
-| 学文章里的知识和写法 | [sj-learning](skills/sj-learning/SKILL.md) | 知识学习、写法拆解或两者一起 |
-| 看稿子哪里让读者接不住 | [sj-diagnosis](skills/sj-diagnosis/SKILL.md) | 六维诊断和局部改法 |
-| 看内容数据，决定下一步 | [sj-data-review](skills/sj-data-review/SKILL.md) | 同口径对比、证据判断与实验建议 |
+| 想清楚账号方向和运营安排 | [sj-positioning](skills/sj-positioning/SKILL.md) | 叁斤的 4 轮 15 问访谈，交付带叁斤评分的 HTML 定位与运营方案 |
+| 让 AI 真正懂你 | [sj-knowledge-base](skills/sj-knowledge-base/SKILL.md) | 61 题采访装出个人知识库：说明书、产品库、素材库、协作协议和四问验收 |
+| 有方向但不知道写什么 | [sj-topics](skills/sj-topics/SKILL.md) | 三种挖法广挖候选，圈选后入库标 S／A／B，写之前才验收 |
+| 拆同行的爆款，变成自己的选题 | [sj-benchmark](skills/sj-benchmark/SKILL.md) | 写给谁、四个零件、爆的原因，按两档迁移成你的选题和笔记 |
+| 写一篇推荐流笔记 | [sj-xhs-viral](skills/sj-xhs-viral/SKILL.md) | 叁斤的选题方法、标题三步法和四层结构，交付 3 个标题、正文、标签和封面建议 |
+| 回答读者会搜索的问题 | [sj-xhs-seo](skills/sj-xhs-seo/SKILL.md) | 卖点提炼、五类关键词库、按搜索规则写的笔记 |
+| 整理录音转写 | [sj-recording](skills/sj-recording/SKILL.md) | 按咨询、课程、混合、碎碎念四种模式整理，真事、原话、方法和选题分进知识库，长稿分段读、读完往回查 |
+| 学文章里的知识和写法 | [sj-learning](skills/sj-learning/SKILL.md) | 讲了什么、怎么写出来的分开学：知识轨加五维写法拆解，学到的方法进方法论，一次最多精拆 3 篇 |
+| 看稿子哪里让读者接不住 | [sj-diagnosis](skills/sj-diagnosis/SKILL.md) | 六维诊断，每个问题给原句、原因和叁斤改法工具箱里的改法 |
+| 看内容数据，决定下一步 | [sj-data-review](skills/sj-data-review/SKILL.md) | 漏斗分诊、数据总表、卡点频率和下周 3 个动作 |
 | 回顾一天、一周或项目 | [sj-work-review](skills/sj-work-review/SKILL.md) | 事实进展、未完成原因和下一步 |
 | 排版公众号成稿 | [sj-wechat-format](skills/sj-wechat-format/SKILL.md) | 叁斤风格、图片内嵌的 HTML |
 
@@ -29,18 +30,18 @@
 
 同一套 `skills/` 可用于 Claude Code、Codex、Cursor、Workbuddy 和豆包工作。安装的是技能文件夹，不是五份不同正文。各工具放到哪里、上传时注意什么，见 [各工具安装](docs/各工具安装.md)。
 
-Claude Code 启用整套插件后，下一次打开会话会显示 [安装后说明](docs/安装后说明.md)，只显示一次。Codex、Cursor、Workbuddy 和豆包工作的安装完成页面不接受技能包写入说明；这些工具第一次做任务时，先说一段首次使用说明，然后完成本次任务。没有技能安装入口时，把对应的 `SKILL.md` 交给能读文件的助手，让它按文中引用继续读参考资料。
+Claude Code 启用整套插件后，下一次打开会话会显示 [安装后说明](docs/安装后说明.md)，只显示一次。Codex、Cursor、Workbuddy 和豆包工作的安装完成页面不接受技能包写入说明；在这些工具里，第一次用入口 `sj` 时，它会先用一段话介绍包里有什么，直接用某一项技能不会弹这段，想看就说「sjskill 怎么用」。没有技能安装入口时，把对应的 `SKILL.md` 交给能读文件的助手，让它按文中引用继续读参考资料。
 
 ### 可以直接这样说
 
-- 「用 sj-positioning 帮我做账号定位和运营方案，直接给 HTML。我修衣六年，有五组前后照片，每周三小时，不露脸，想让附近居民来咨询。」
+- 「用 sj-positioning 帮我做账号定位。我在电商公司做了 4 年运营，想拍职场 Vlog 接广告，每周能挤 6 小时。」
 - 「用 sj-xhs-seo 写一篇回答这个搜索问题的笔记。下面是我的材料和能验证的结果……」
 - 「用 sj-learning 拆这篇文章的知识和写法，说明哪些有证据、哪些只是作者判断。」
 - 「用 sj-data-review 复盘这些后台数据。没提供的字段不要当成零。」
 
 更完整的路线和一个合成示例见 [新手入门](docs/新手入门.md) 。
 
-定位会先利用已有资料，默认每轮最多补问一个关键问题、最多两轮后给方案；你说直接做就停止补问。HTML 报告包含推荐方向、内容栏目、主页成品、具体运营安排和调整依据，可离线打开、复制核心定位卡和打印。没有文件工具时会提供可保存的源码，并说明尚未生成文件。缺少市场或经历证据的地方保留待验证。
+定位由叁斤的 AI 分身来做：分 4 轮问 15 个问题，摸底、你有什么、为谁服务、落地条件；你已经说过的不重复问，答「所有人」「不知道」会被追问到具体。方案先给一段叁斤式总判断，再给一句话定位和「价值 × 用户 × 人设 × 类型 × 风格」五项，后面是受众画像、3—5 个内容方向和能直接开写的选题、昵称与可复制的简介、成长三阶段、变现策略、前 30 天执行、叁斤评分（门槛／供需／离钱距离／执行匹配），以及发第一篇前的 10 分钟市场验证。HTML 报告可离线打开、一键复制核心定位卡、直接打印。你也可以先要初稿，开头会列出哪几处是推测的。
 
 ## 文件、隐私与能力边界
 

@@ -59,7 +59,7 @@ def main():
             marker.write_text(text + '\n', encoding='utf-8')
         except OSError:
             pass
-    # 与独立技能共用首次提示标记；老版本只留下 manual-shown 时也补齐。
+    # 与入口 sj 共用首次提示标记；老版本只留下 manual-shown 时也补齐。
     try:
         seen.parent.mkdir(parents=True, exist_ok=True)
         with seen.open('x', encoding='utf-8'):

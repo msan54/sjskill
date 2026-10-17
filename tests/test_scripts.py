@@ -34,7 +34,10 @@ class ScriptTests(unittest.TestCase):
         self.assertEqual(self.run_script(INIT, target, '--dry-run').returncode, 0)
         self.assertFalse(target.exists())
         self.assertEqual(self.run_script(INIT, target).returncode, 0)
-        self.assertEqual(len([p for p in target.rglob('*') if p.is_dir()]), 10)
+        self.assertEqual(len([p for p in target.rglob('*') if p.is_dir()]), 13)
+        for name in ('说明书', '产品库', '素材库', '方法论', '输入/录音/待处理', '选题库', '待发布', '已发布'):
+            self.assertTrue((target / name).is_dir(), name)
+        self.assertIn('东西往哪放', (target / '知识库说明.md').read_text(encoding='utf-8'))
         document = target / '知识库说明.md'
         document.write_text('用户自己的存放约定', encoding='utf-8')
         self.assertEqual(self.run_script(INIT, target).returncode, 0)
@@ -44,9 +47,9 @@ class ScriptTests(unittest.TestCase):
     def test_library_conflict_leaves_no_partial_folders(self):
         target = self.root / '已有库'
         target.mkdir()
-        (target / '素材案例库').write_text('重要原文件')
+        (target / '素材库').write_text('重要原文件')
         self.assertNotEqual(self.run_script(INIT, target).returncode, 0)
-        self.assertEqual(list(p.name for p in target.iterdir()), ['素材案例库'])
+        self.assertEqual(list(p.name for p in target.iterdir()), ['素材库'])
 
     def test_library_symlink_is_not_followed(self):
         target = self.root / '库'

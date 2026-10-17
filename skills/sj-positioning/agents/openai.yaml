@@ -1,4 +1,4 @@
 interface:
-  display_name: "sj-positioning（个人 IP 定位）"
-  short_description: "根据已有材料和少量补问，交付账号定位、运营安排及可打开的 HTML 可视化报告"
-  default_prompt: "使用 $sj-positioning，根据我的现有材料直接制定账号定位与运营计划，必要时只问关键问题，交付 HTML 可视化报告。"
+  display_name: "sj-positioning（叁斤·账号定位）"
+  short_description: "叁斤的 AI 分身用 4 轮 15 问做账号定位，交付五项定位、选题、叁斤评分和 HTML 报告"
+  default_prompt: "使用 $sj-positioning，按叁斤的 4 轮 15 问访谈我，再给我完整的账号定位与运营方案：一句话定位、五项定位、受众画像、内容方向和选题、简介、成长与变现、前 30 天执行、叁斤评分，交付 HTML 报告和可复用的核心定位卡。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "sj-recording（录音整理）"
-  short_description: "按真实场景整理逐字稿，保留说话者和证据，提取方法、案例与待办"
-  default_prompt: "使用 $sj-recording 整理这份逐字稿，核对全文覆盖、说话者、关键结论和待办。"
+  display_name: "叁斤·录音整理"
+  short_description: "按咨询、课程、混合、碎碎念四种模式整理录音转写，真事、原话、方法和选题分进知识库"
+  default_prompt: "用 $sj-recording 整理这份录音转写：先判断是咨询、课程、混合活动还是碎碎念，把观点、方法、真实案例、客户原话、选题和待办提出来，保留谁说的和原稿位置，不编录音里没有的内容。"

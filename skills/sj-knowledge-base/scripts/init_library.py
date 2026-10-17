@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""创建只增不覆盖的个人 IP 知识库。仅使用 Python 标准库。"""
+"""按叁斤的知识库结构新建缺少的目录和知识库说明，只增不覆盖。仅使用 Python 标准库。"""
 import argparse
 import json
 from pathlib import Path
 import sys
 
 DIRECTORIES = (
-    '收件箱', '收件箱/已处理', '选题库', '素材案例库', '客户需求库',
-    '方法论库', '待发布', '已发布', '数据复盘', '工作复盘',
+    '说明书', '产品库', '素材库', '方法论',
+    '输入', '输入/录音', '输入/录音/待处理', '输入/录音/已处理', '输入/课程学习', '输入/内容学习',
+    '选题库', '待发布', '已发布',
 )
 
 
@@ -39,9 +40,8 @@ def create_library(root, dry_run=False):
     for directory in directories:
         directory.mkdir(exist_ok=True)
     if not document.exists():
-        reference = Path(__file__).resolve().parents[1] / 'references' / '目录与交接.md'
-        content = '# 我的 IP 知识库\n\n本库使用普通 Markdown 文件，不绑定任何应用。\n\n'
-        content += reference.read_text(encoding='utf-8').replace('# 目录与交接\n', '', 1)
+        template = Path(__file__).resolve().parents[1] / 'references' / '知识库说明模板.md'
+        content = template.read_text(encoding='utf-8')
         with document.open('x', encoding='utf-8') as stream:
             stream.write(content)
     return result

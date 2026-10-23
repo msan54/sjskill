@@ -1,4 +1,4 @@
 interface:
   display_name: "叁斤·选题挖掘"
-  short_description: "母题法、骨架法、信号直挖不设门槛广挖，圈选后入库标 S/A/B，写之前才验收"
-  default_prompt: "用 $sj-topics 帮我挖选题：先用母题法、骨架法、信号直挖广挖，每条挂上证据给我圈选；我圈的再入库，标优先级和素材状态。"
+  short_description: "母题法、对标原题法、信号直挖不设门槛广挖，圈选后入库标 S/A/B，写之前才验收"
+  default_prompt: "用 $sj-topics 帮我挖选题：先用母题法、对标原题法、信号直挖广挖，每条挂上证据给我圈选；我圈的再入库，标优先级和素材状态。"

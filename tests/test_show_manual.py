@@ -107,11 +107,11 @@ class ShowManualTests(unittest.TestCase):
         self.assertIn('.sjskill/seen', router)
         notice = router[router.index('首次使用说明：'):]
         notice = notice[:notice.index('\n')]
-        for item in ('知识库', '对标拆解', '录音整理', '文章学习'):
+        for item in ('知识库', '知识库体检', '对标拆解', '录音整理', '文章学习'):
             self.assertIn(item, notice)
         self.assertNotIn('资料夹', notice)
         skills = [path for path in (PACKAGE / 'skills').iterdir() if (path / 'SKILL.md').is_file()]
-        self.assertEqual(len(skills), 13)
+        self.assertEqual(len(skills), 14)
         for skill in skills:
             self.assertFalse((skill / 'scripts' / 'show_once.py').exists())
             if skill.name == 'sj':

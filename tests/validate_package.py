@@ -6,9 +6,9 @@ import re
 import sys
 import yaml
 
-EXPECTED = {'sj', 'sj-positioning', 'sj-knowledge-base', 'sj-topics', 'sj-xhs-viral',
-            'sj-xhs-seo', 'sj-recording', 'sj-learning', 'sj-diagnosis', 'sj-data-review',
-            'sj-work-review', 'sj-wechat-format', 'sj-benchmark'}
+EXPECTED = {'sj', 'sj-positioning', 'sj-knowledge-base', 'sj-kb-checkup', 'sj-topics',
+            'sj-xhs-viral', 'sj-xhs-seo', 'sj-recording', 'sj-learning', 'sj-diagnosis',
+            'sj-data-review', 'sj-work-review', 'sj-wechat-format', 'sj-benchmark'}
 DISTRIBUTION_DIRS = ('skills', 'docs', 'licenses', '.claude-plugin', 'hooks')
 DISTRIBUTION_FILES = ('README.md', 'CHANGELOG.md', 'LICENSE', '第三方声明.md', 'ROADMAP.md')
 REQUIRED_FILES = (*DISTRIBUTION_FILES, 'docs/新手入门.md',

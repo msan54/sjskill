@@ -15,11 +15,12 @@
 | 不知道从哪里开始 | [sj](skills/sj/SKILL.md) | 判断当前应先做的事 |
 | 想清楚账号方向和运营安排 | [sj-positioning](skills/sj-positioning/SKILL.md) | 叁斤的 4 轮 15 问访谈，交付带叁斤评分的 HTML 定位与运营方案 |
 | 让 AI 真正懂你 | [sj-knowledge-base](skills/sj-knowledge-base/SKILL.md) | 61 题采访装出个人知识库：说明书、产品库、素材库、协作协议和四问验收 |
+| 给知识库做一次健康体检 | [sj-kb-checkup](skills/sj-kb-checkup/SKILL.md) | 查分类结构、过期与散落历史、积压待沉淀、重复冲突及多端协作说明一致性，先报告后确认整理 |
 | 有方向但不知道写什么 | [sj-topics](skills/sj-topics/SKILL.md) | 三种挖法广挖候选，圈选后入库标 S／A／B，写之前才验收 |
 | 拆同行的爆款，变成自己的选题 | [sj-benchmark](skills/sj-benchmark/SKILL.md) | 写给谁、四个零件、爆的原因，按两档迁移成你的选题和笔记 |
 | 写一篇推荐流笔记 | [sj-xhs-viral](skills/sj-xhs-viral/SKILL.md) | 叁斤的选题方法、标题三步法和四层结构，交付 3 个标题、正文、标签和封面建议 |
 | 回答读者会搜索的问题 | [sj-xhs-seo](skills/sj-xhs-seo/SKILL.md) | 卖点提炼、五类关键词库、按搜索规则写的笔记 |
-| 整理录音转写 | [sj-recording](skills/sj-recording/SKILL.md) | 按咨询、课程、混合、碎碎念四种模式整理，真事、原话、方法和选题分进知识库，长稿分段读、读完往回查 |
+| 整理录音转写 | [sj-recording](skills/sj-recording/SKILL.md) | 多端规则适配、兼容常见转写工具；会议、咨询、课程、碎碎念全面拆解沉淀金句、素材与方法，缺类可提议新建分类 |
 | 学文章里的知识和写法 | [sj-learning](skills/sj-learning/SKILL.md) | 讲了什么、怎么写出来的分开学：知识轨加五维写法拆解，学到的方法进方法论，一次最多精拆 3 篇 |
 | 看稿子哪里让读者接不住 | [sj-diagnosis](skills/sj-diagnosis/SKILL.md) | 六维诊断，每个问题给原句、原因和叁斤改法工具箱里的改法 |
 | 看内容数据，决定下一步 | [sj-data-review](skills/sj-data-review/SKILL.md) | 漏斗分诊、数据总表、卡点频率和下周 3 个动作 |
@@ -28,9 +29,9 @@
 
 ## 安装与第一次使用
 
-同一套 `skills/` 可用于 Claude Code、Codex、Cursor、Workbuddy 和豆包工作。安装的是技能文件夹，不是五份不同正文。各工具放到哪里、上传时注意什么，见 [各工具安装](docs/各工具安装.md)。
+同一套 `skills/` 可用于 Claude Code、Codex、Gemini CLI、Cursor、Workbuddy 和豆包工作。安装的是技能文件夹，不是几份不同正文。各工具放到哪里、上传时注意什么，见 [各工具安装](docs/各工具安装.md)。
 
-Claude Code 启用整套插件后，下一次打开会话会显示 [安装后说明](docs/安装后说明.md)，只显示一次。Codex、Cursor、Workbuddy 和豆包工作的安装完成页面不接受技能包写入说明；在这些工具里，第一次用入口 `sj` 时，它会先用一段话介绍包里有什么，直接用某一项技能不会弹这段，想看就说「sjskill 怎么用」。没有技能安装入口时，把对应的 `SKILL.md` 交给能读文件的助手，让它按文中引用继续读参考资料。
+Claude Code 启用整套插件后，下一次打开会话会显示 [安装后说明](docs/安装后说明.md)，只显示一次。Codex、Gemini CLI、Cursor、Workbuddy 和豆包工作的安装完成页面不接受技能包写入说明；在这些工具里，第一次用入口 `sj` 时，它会先用一段话介绍包里有什么，直接用某一项技能不会弹这段，想看就说「sjskill 怎么用」。没有技能安装入口时，把对应的 `SKILL.md` 交给能读文件的助手，让它按文中引用继续读参考资料。
 
 ### 可以直接这样说
 

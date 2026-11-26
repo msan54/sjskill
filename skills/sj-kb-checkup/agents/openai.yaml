@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁斤·知识库体检"
+  short_description: "体检知识库分类、过期积压、重复冲突与多端协作说明一致性，先报告后确认整理"
+  default_prompt: "用 $sj-kb-checkup 给我的知识库做一次体检：先运行扫描脚本摸清目录结构、散落旧资料、积压待沉淀文件、重复冲突和 AGENTS.md／CLAUDE.md／GEMINI.md 等协作说明一致性，再给我一份分三级、不擅自动文件的精简体检报告。"
